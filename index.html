@@ -8,7 +8,66 @@
     <link rel='stylesheet' href='main.css'>
 </head>
 <body>
-    <header>Waitstaff Calculator</header>
+    <header>
+        <h1>Waitstaff Calculator</h1>
+    </header>
+        <section>
+            <h2>Enter the Meal Details</h2>
+            <form id="meal-details-form">
+                <div>
+                    <label for="meal-price">Base Meal Price: $</label>
+                    <input type="text" name="meal-price" class="meal-price-entry">
+                </div>
+                <br>
+                <div>
+                    <label for="meal-tax">Tax Rate: %</label>
+                    <input type="text" name="meal-tax" class="meal-tax-entry">
+                </div>
+                <br>
+                <div>
+                    <label for="meal-tip">Tip Percentage: %</label>
+                    <input type="text" name="meal-tip" class="meal-tip-entry">
+                </div>
+                <br>
+                <button type="submit">Submit</button>
+                <button>Cancel</button>
+            </form>
+        </section>
+        <section>
+            <h2>Customer Charges</h2>
+                <div class="meal-divs">
+                    <p>Subtotal &nbsp</p>
+                    <p class="meal-subtotal">0.00</p>
+                </div>
+                <div class="meal-divs">
+                    <p>Tip &nbsp</p>
+                    <p class="meal-tip-amount">0.00</p>
+                </div>
+                <hr class="solid">
+                <div class="meal-divs">
+                    <p>Total &nbsp</p>
+                    <p class="meal-total-amount">0.00</p>
+                </div>
+        </section>
+        <section>
+            <h2>My Earnings Info</h2>
+            <hr class="solid">
+            <div class="meal-divs">
+                <p>Tip Total: &nbsp</p>
+                <p class="earnings-tips">0.00</p>
+            </div>
+            <div class="meal-divs">
+                <p>Meal count: &nbsp</p>
+                <p class="earnings-meals">0</p>
+            </div>
+            <div class="meal-divs">
+                <p>Average Tip Per Meal: &nbsp</p>
+                <p class="earnings-average-tip">0.00</p>
+            </div>
+        </section>
+        <section>
+
+        </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src='index.js'></script>

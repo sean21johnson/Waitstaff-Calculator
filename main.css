@@ -1,0 +1,9 @@
+.meal-divs {
+    display: flex;
+}
+
+section {
+    border: 1px dotted black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
